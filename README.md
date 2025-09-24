@@ -1,2 +1,3 @@
 # Journal
 
+ACTIVIDADES DE LA CLASE DE DEWS
