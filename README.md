@@ -1,3 +1,5 @@
-# Journal
+# Deberes mandados por Alberto
 
-ACTIVIDADES DE LA CLASE DE DEWS
+DWES --> EjerciciosGraficos
+
+ERD -->Ejercicios(Journal)
