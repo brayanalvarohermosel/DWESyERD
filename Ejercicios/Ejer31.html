@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Formulario: Pregunta al usuario</title>
+</head>
+<body>
+    <form id="preguntaForm" novalidate>
+        <label for="respuesta">¿Cuál es tu color favorito?</label>
+        <input id="respuesta" name="respuesta" type="text" placeholder="Escribe tu respuesta aquí" required />
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="salida" aria-live="polite"></p>
+
+    <script>
+        const form = document.getElementById('preguntaForm');
+        const input = document.getElementById('respuesta');
+        const salida = document.getElementById('salida');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const valor = input.value.trim();
+            if (!valor) {
+                salida.textContent = 'Por favor, escribe una respuesta.';
+                salida.style.color = '#c00';
+                return;
+            }
+            salida.style.color = '#060';
+            salida.textContent = `Gracias. Tu color favorito es: ${valor}`;
+        });
+    </script>
+</body>
+</html>
